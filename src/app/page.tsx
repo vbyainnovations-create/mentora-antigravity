@@ -19,15 +19,15 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-white">
       {/* Navigation */}
       <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
-        <div className="container mx-auto px-6 h-24 flex items-center justify-between">
+        <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Link href="/" className="flex items-center">
               <Image 
                 src="/mentora-full-logo.png" 
                 alt="Mentora Edutors" 
-                width={600} 
-                height={180} 
-                className="h-16 md:h-20 w-auto object-contain" 
+                width={280} 
+                height={84} 
+                className="h-14 md:h-16 w-auto object-contain" 
                 priority
               />
             </Link>
