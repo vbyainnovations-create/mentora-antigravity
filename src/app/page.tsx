@@ -21,8 +21,11 @@ export default function Home() {
       <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Link href="/">
-              <Image src="/mentora-logo-clean.png" alt="Mentora Edutors" width={180} height={48} className="h-8 md:h-10 w-auto object-contain" />
+            <Link href="/" className="flex items-center gap-3">
+              <Image src="/mentora-logo-clean.png" alt="Mentora Edutors" width={48} height={48} className="h-8 md:h-10 w-auto object-contain" />
+              <span className="font-outfit text-xl md:text-2xl font-bold text-slate-900 tracking-tight">
+                Mentora Edutors
+              </span>
             </Link>
           </div>
           <nav className="hidden md:flex items-center gap-8">
