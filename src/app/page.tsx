@@ -25,9 +25,9 @@ export default function Home() {
               <Image 
                 src="/mentora-full-logo.png" 
                 alt="Mentora Edutors" 
-                width={280} 
-                height={84} 
-                className="h-14 md:h-16 w-auto object-contain" 
+                width={560} 
+                height={168} 
+                className="h-16 md:h-20 w-auto object-contain" 
                 priority
               />
             </Link>
