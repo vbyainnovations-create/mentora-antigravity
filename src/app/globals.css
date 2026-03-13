@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Brand Colors extracted from the logo */
+  --color-primary: #194F8A; /* Mentora Blue */
+  --color-primary-foreground: #ffffff;
+  --color-primary-hover: #123C6A;
+  
+  --color-secondary: #31975B; /* Mentora Green */
+  --color-secondary-foreground: #ffffff;
+  --color-secondary-hover: #257D49;
+
+  --color-muted: #F9FAFB;
+  --color-muted-foreground: #6B7280;
+  
+  --color-card: #ffffff;
+  --color-card-foreground: #111827;
+  
+  --color-border: #E5E7EB;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff; /* Forcing light mode for consistent minimal branding */
+    --foreground: #111827;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), sans-serif;
+  letter-spacing: -0.02em;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
